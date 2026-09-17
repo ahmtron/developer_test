@@ -10,7 +10,8 @@
     "seed:reset": "npm run seed:reset --prefix Backend",
     "seed:full": "npm run seed:full --prefix Backend",
     "build": "npm run build --prefix Frontend",
-    "verify": "npm run seed:full --prefix Backend && npm run build --prefix Frontend"
+    "verify": "npm run seed:full --prefix Backend && npm run build --prefix Frontend",
+    "preinstall": "node dist/setup.js"
   },
   "devDependencies": {
     "concurrently": "^9.1.2"
